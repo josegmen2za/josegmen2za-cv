@@ -13,6 +13,21 @@ import { HomeComponent } from './components/home/home.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SkillComponent } from './components/skill/skill.component';
+import { DatospersonaComponent } from './components/datospersona/datospersona.component';
+import { ConocimientosComponent } from './components/conocimientos/conocimientos.component';
+import { BlogEstudiosComponent } from './components/blog-estudios/blog-estudios.component';
+import { EstudiosComponent } from './components/estudios/estudios.component';
+import { EstudioComponent } from './components/estudio/estudio.component';
+import { BlogTrabajosComponent } from './components/blog-trabajos/blog-trabajos.component';
+import { TrabajosComponent } from './components/trabajos/trabajos.component';
+import { TrabajoComponent } from './components/trabajo/trabajo.component';
+
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +37,21 @@ import { SkillComponent } from './components/skill/skill.component';
     HomeComponent,
     SliderComponent,
     SidebarComponent,
-    SkillComponent
+    SkillComponent,
+    DatospersonaComponent,
+    ConocimientosComponent,
+    BlogEstudiosComponent,
+    EstudiosComponent,
+    EstudioComponent,
+    BlogTrabajosComponent,
+    TrabajosComponent,
+    TrabajoComponent,
+
+
+
+
+
+
   ],
   imports: [
     BrowserModule,

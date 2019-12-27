@@ -1,0 +1,38 @@
+<!-- s -->
+
+<div class="center">
+    <section id="content">
+        <h2 class="subheader">Datos Personales</h2>  
+
+        <div class="loading" *ngIf="!persona ">
+            Cargando...
+        </div>
+        <div class="loading" *ngIf="persona  && persona == 0">
+            No hay Articulos para mostrar, intentalo mas tarde.
+        </div>
+        <div id="articles" *ngIf="persona">
+            <article class="article-item"*ngFor="let personas of persona">
+                <div class="image-wrap">
+                    <img src="{{url + 'get-image' + '/' + personas.image}}" alt="{{personas.nombres}}" *ngIf="personas.image">
+                    <img src="/assets/images/default.png" alt="{{personas.nombres}}" *ngIf="!personas.image">
+                </div>
+                <div >
+                <h2>Nombres y Apellidos: {{personas.nombres}} {{personas.apellidos}}</h2>
+                <ul>Teléfono: {{personas.telefono}}</ul>
+                <ul>email: {{personas.email}}</ul>
+                <ul>Direccion: {{personas.direccion}}</ul>
+                <ul>Rut: {{personas.rut}}</ul>
+                <ul class="datospersonales">Conocimientos: {{personas.informacion}}</ul>
+                <ul class="datospersonales">Habilidades: {{personas.habilidades}}</ul>
+                <ul class="datospersonales">Actitudes: {{personas.actitudes}}</ul>
+                </div>   
+                
+                
+                <div class="crearfix"></div>
+            </article>
+            
+        
+        </div>
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

@@ -1,0 +1,22 @@
+<div class="loading" *ngIf="!estudios ">
+    Cargando...
+</div>
+<div class="loading" *ngIf="estudio  && estudios == 0">
+    No hay Articulos para mostrar, intentalo mas tarde.
+</div>
+<div id="articles" *ngIf="estudios">
+    <article class="article-item" *ngFor="let estudio of estudios">
+        <div class="image-wrap">
+            <img src="{{estudio.image}}" alt="{{estudio.instituto}}" *ngIf="estudio.image">
+            <img src="/assets/images/default.png" alt="{{estudio.instituto}}" *ngIf="!estudio.image">
+        </div>
+        <h2>{{estudio.instituto}}</h2>
+        <span class="date">
+            {{estudio.year}}
+        </span>
+        <a [routerLink]="['/estudio', estudio._id]">Leer mas</a>
+        <div class="crearfix"></div>
+    </article>
+    
+
+</div>

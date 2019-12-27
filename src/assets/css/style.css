@@ -19,7 +19,7 @@ body{
     border-top: 5px solid #fb6161;
 }
 .fondo{
-	background: url('/src/assets/images/1493938270-programacion-istock.jpg') !important;
+	background: url('../images/programadores-freelance-Workana.jpg') !important;
 	height: 100vh;
 	background-position: center;
 	background-size: cover;
@@ -153,12 +153,12 @@ body{
     background: white;
     color: rgb(78, 78, 78);
     padding: 10px;
-    width: 110px;
-    height: 35px;
+    width: 150px;
+    height: 55px;
     margin: 0px auto;
     font-size: 14px;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: none !important;
     text-shadow: none;
     text-align: center;
     line-height: 35px;
@@ -497,7 +497,7 @@ textarea{
         color: rgb(78, 78, 78);
         padding: 5px;
         width: 60px;
-        height: 25px;
+        height: 45px;
         margin: 0px auto;
         font-size: 10px;
         text-transform: uppercase;

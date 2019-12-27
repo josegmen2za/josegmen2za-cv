@@ -1,0 +1,31 @@
+
+
+<div class="center">
+    <section id="content">
+        
+        <article class=" article-item " *ngIf="estudio" >
+                        
+            <div class="image-wrap">
+                <img src="{{estudio.image}}" alt="{{estudio.instituto}}" *ngIf="estudio.image" >
+                <img src="/assets/images/default.png" alt="{{estudio.instituto}}" *ngIf="!estudio.image" >
+            </div>
+            <h1 class="subheader">{{estudio.instituto}}</h1>
+            <span class="date">
+                {{estudio.year}}
+            </span>
+            <p>
+                {{estudio.lugar}}
+            </p>
+            <!-- <div class="button">
+                <a [routerLink]="['/blog/editar', article._id]" routerLinkActive="router-link-active"  class="btn btn-warning">Editar</a>
+                <a (click)="delete(article._id)" class="btn-danger btn">Borrar</a>
+            </div> -->
+            
+
+            <div class="crearfix"></div>
+        </article>
+        
+        
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

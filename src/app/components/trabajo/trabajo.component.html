@@ -1,0 +1,30 @@
+<div class="center">
+    <section id="content">
+        
+        <article class=" article-item " *ngIf="trabajo" >
+                        
+            <div class="image-wrap">
+                <img src="{{trabajo.image}}" alt="{{trabajo.empresa}}" *ngIf="trabajo.image" >
+                <img src="/assets/images/default.png" alt="{{trabajo.empresa}}" *ngIf="!trabajo.image" >
+            </div>
+            <h1 class="subheader">{{trabajo.empresa}}</h1>
+            <!-- <span class="date">
+                {{article.date | amLocale: 'es' | amTimeAgo}}
+            </span> -->
+            <p>
+                {{trabajo.cargo}}
+                {{trabajo.area}}
+            </p>
+            <!-- <div class="button">
+                <a [routerLink]="['/blog/editar', article._id]" routerLinkActive="router-link-active"  class="btn btn-warning">Editar</a>
+                <a (click)="delete(article._id)" class="btn-danger btn">Borrar</a>
+            </div> -->
+            
+
+            <div class="crearfix"></div>
+        </article>
+        
+        
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

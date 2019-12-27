@@ -7,6 +7,17 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 // Importar componentes a los cuales les quiero hacer una pagina exclusiva
 import { HomeComponent } from './components/home/home.component';
+import { DatospersonaComponent } from './components/datospersona/datospersona.component';
+import { ConocimientosComponent } from './components/conocimientos/conocimientos.component';
+import { BlogEstudiosComponent } from './components/blog-estudios/blog-estudios.component';
+import { EstudioComponent } from './components/estudio/estudio.component';
+import { BlogTrabajosComponent } from './components/blog-trabajos/blog-trabajos.component';
+import { TrabajoComponent } from './components/trabajo/trabajo.component';
+
+
+
+
+
 
 
 // Array de rutas
@@ -14,21 +25,15 @@ import { HomeComponent } from './components/home/home.component';
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
-/*     {path: 'blog', component: BlogComponent},
-    {path: 'conocimientos', component: ConocimientosComponent },
     {path: 'datospersonales', component: DatospersonaComponent},
+    {path: 'conocimientos', component: ConocimientosComponent },
     {path: 'blog/estudios', component: BlogEstudiosComponent},
     {path: 'estudio/:id', component: EstudioComponent},
-    {path: 'trabajo/:id', component: TrabajoComponent},
     {path: 'blog/trabajos', component: BlogTrabajosComponent},
-    {path: 'blog/articulo/:id', component: ArticleComponent},
-    {path: 'blog/crear', component: ArticleNewComponent},
-    {path: 'blog/editar/:id', component: ArticleEditComponent},
+    {path: 'trabajo/:id', component: TrabajoComponent},
+/*    
     {path: 'buscar/:search', component: SearchComponent},
     {path: 'formulario', component: FormularioComponent},
-    {path: 'pagina1', component: Pagina1Component},
-    {path: 'pagina2', component: Pagina2Component},
-    {path: 'pagina2/:nombre/:apellidos', component: Pagina2Component}, 
     {path: '**', component: ErrorComponent}*/
     { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
