@@ -1,7 +1,7 @@
 <div class="loading" *ngIf="!estudios ">
     Cargando...
 </div>
-<div class="loading" *ngIf="estudios ">
+<div class="loading" *ngIf="estudios && estudios == []">
     No hay Articulos para mostrar, intentalo mas tarde.
 </div>
 <div id="articles" *ngIf="estudios">
@@ -14,7 +14,7 @@
         <span class="date">
             {{estudio.year}}
         </span>
-        <a [routerLink]="['/estudio', estudio._id]">Leer mas</a>
+        <a [routerLink]="['/estudio', estudio._id]" (click)="redireccion()">Leer mas</a>
         <div class="crearfix"></div>
     </article>
     

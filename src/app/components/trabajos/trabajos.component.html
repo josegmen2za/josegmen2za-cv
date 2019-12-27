@@ -1,10 +1,10 @@
 <div class="loading" *ngIf="!trabajos ">
     Cargando...
 </div>
-<div class="loading" *ngIf="trabajos ">
+<div class="loading" *ngIf="trabajos && trabajos == [] ">
     No hay Articulos para mostrar, intentalo mas tarde.
 </div>
-<div id="articles" *ngIf="trabajos">
+<div id="articles" *ngIf="trabajos ">
     <article class="article-item" *ngFor="let trabajo of trabajos">
         <div class="image-wrap">
             <img src="{{trabajo.image}}" alt="{{trabajo.instituto}}" *ngIf="trabajo.image">
@@ -14,7 +14,7 @@
         <span class="date">
             {{trabajo.duracion}}
         </span>
-        <a [routerLink]="['/trabajo', trabajo._id]">Leer mas</a>
+        <a [routerLink]="['/trabajo', trabajo._id]" (click)="redireccion()">Leer mas</a>
         <div class="crearfix"></div>
     </article>
     

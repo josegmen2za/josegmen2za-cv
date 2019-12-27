@@ -11,14 +11,17 @@
             <!-- <span class="date">
                 {{article.date | amLocale: 'es' | amTimeAgo}}
             </span> -->
-            <p>
-                {{trabajo.cargo}}
-                {{trabajo.area}}
-            </p>
-            <!-- <div class="button">
-                <a [routerLink]="['/blog/editar', article._id]" routerLinkActive="router-link-active"  class="btn btn-warning">Editar</a>
-                <a (click)="delete(article._id)" class="btn-danger btn">Borrar</a>
-            </div> -->
+            <p> Cargo: {{trabajo.cargo}}</p>
+            <p> Area: {{trabajo.area}}</p>
+            <p> Duracion: {{trabajo.duracion}}</p>
+            <p> Jefe Inmediato: {{trabajo.jefe}}</p>
+            <p> Telefono: {{trabajo.telefono}}</p>
+            <p> Responsabilidades: {{trabajo.responsabilidad}}</p>
+            <p> Logros: {{trabajo.logros}}</p>
+
+
+
+            <a [routerLink]="['/blog/trabajos']" routerLinkActive="active" class="btn btn-success">Volver</a>
             
 
             <div class="crearfix"></div>

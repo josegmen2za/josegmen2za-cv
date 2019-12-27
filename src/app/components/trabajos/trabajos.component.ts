@@ -21,4 +21,8 @@ export class TrabajosComponent implements OnInit {
   ngOnInit() {
   }
 
+  redireccion(){
+    console.log("prueba")
+    window.scrollTo(0, 0);
+  }
 }

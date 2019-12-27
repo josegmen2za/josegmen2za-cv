@@ -30,6 +30,7 @@ import { TrabajoComponent } from './components/trabajo/trabajo.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
