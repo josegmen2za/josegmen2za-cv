@@ -47,7 +47,7 @@ import { TrabajoComponent } from './components/trabajo/trabajo.component';
     BlogTrabajosComponent,
     TrabajosComponent,
     TrabajoComponent,
-
+    EsParPipe,
 
 
 
