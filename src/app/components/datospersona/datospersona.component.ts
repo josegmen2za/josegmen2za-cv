@@ -13,7 +13,7 @@ import { Global } from 'src/app/services/global';
 })
 export class DatospersonaComponent implements OnInit {
 
-  public persona: Persona[];
+  public persona: Persona;
   public url: string;
 
   constructor(

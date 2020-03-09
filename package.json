@@ -1,6 +1,6 @@
 {
   "name": "frontend-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,6 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "engines": {
+    "node": "v13.2.0",
+    "npm": "6.13.1"
   },
   "private": true,
   "dependencies": {
