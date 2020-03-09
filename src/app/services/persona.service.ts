@@ -7,14 +7,16 @@ import { Global } from './global';
 @Injectable()
 export class PersonaService{
     public url: string;
-    private id= '5e6306a239bbee43307b6e37';
+    private id: string;
     constructor(
         private _http: HttpClient
     ){
         this.url = Global.url;
+        this.id = "5e6306a239bbee43307b6e37";
     }
     
     getPersona():Observable<any>{
+        console.log(this.id)
         return this._http.get(this.url+'cvpersona/'+this.id)
     }
 }
