@@ -7,6 +7,7 @@ import { Global } from './global';
 @Injectable()
 export class PersonaService{
     public url: string;
+    private id= '5e6306a239bbee43307b6e37';
     constructor(
         private _http: HttpClient
     ){
@@ -14,6 +15,6 @@ export class PersonaService{
     }
     
     getPersona():Observable<any>{
-        return this._http.get(this.url+'cvspersona')
+        return this._http.get(this.url+'cvpersona/'+this.id)
     }
 }

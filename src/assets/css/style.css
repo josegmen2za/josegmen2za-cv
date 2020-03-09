@@ -129,6 +129,7 @@ body{
     background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e20c0c,#8e44ad);
     background-size: 400% 400%;
     animation: bganimation 15s infinite;
+
 }
 @keyframes bganimation {
     0%{
@@ -145,7 +146,7 @@ body{
 #slider h1{
     margin: 0px;
     padding: 0px;
-    padding-top: 150px;
+    padding-top: 85px;
     text-align: center;
 }
 .btn-white{
@@ -404,6 +405,7 @@ textarea{
 @media (max-width: 1582px){
    .center{
        width: auto;
+       padding: 100px;
    }
 }
 @media (max-width: 964px){
@@ -412,6 +414,18 @@ textarea{
     }
     #menu {
         width: 70%;
+    }
+    #logo {
+        width: 80%;
+    }
+}
+@media (max-width: 894px){
+    .center{
+        width: auto;
+        padding-top: 96px;
+    }
+    #menu {
+        width: 60%;
     }
 }
 @media (max-width: 785px){
