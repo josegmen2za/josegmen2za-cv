@@ -131,17 +131,7 @@ body{
     animation: bganimation 15s infinite;
 
 }
-@keyframes bganimation {
-    0%{
-      background-position: 0% 50%;
-    }
-    50%{
-      background-position: 100% 50%;
-    }
-    100%{
-      background-position: 0% 50%;
-    }
-  }
+
   
 #slider h1{
     margin: 0px;
@@ -404,10 +394,104 @@ textarea{
 /* Responsive */
 @media (max-width: 1582px){
    .center{
-       width: auto;
-       padding: 100px;
+       width: 90%;
+       
    }
 }
+@media (max-width: 1580px){
+    .center{
+        width: 90%;
+    }
+   }
+   @media (max-width: 1336px){
+    #logo{
+      width: 21%;
+      margin-left: -15px;
+      font-size: 25px;
+    };
+    #menu{
+      width: 50%;
+    }
+    .center{
+      width: 90%;
+    }
+   
+    .header{
+      width: 100%;
+    }
+    #content{
+      width: 70%;
+    }
+    #slider{
+      height: 150px;
+      padding-top: 0px;
+    }
+    #slider h1{
+      padding-top: 0px;
+    }
+   }
+   @media (max-width: 1126px){
+    #logo{
+      width: 20%;
+      margin-left: -15px;
+      font-size: 20px;
+    };
+    #menu{
+      width: 50%;
+      font-size: 20px;
+    }
+    #menu ul{
+      font-size: 16px;
+    }
+    .center{
+      width: 95%;
+    }
+   
+    .header{
+      width: 100%;
+    }
+    #content{
+      width: 70%;
+    }
+    #slider{
+      height: 150px;
+      padding-top: 0px;
+    }
+    #slider h1{
+      padding-top: 0px;
+    }
+   }
+  @media (max-width: 976px){
+    .center{
+        width: 90%;
+    }
+    #menu ul{
+        width: auto;
+    }
+    #content{
+      width: 65%;
+    }
+    #logo{
+      width: 20%;
+      margin-left: -15px;
+      font-size: 15px;
+    }
+    .app-logo{
+      height: 20px;
+    }
+    #slider h1{
+      font-size: 30px;
+    }
+    .btn-white-p{
+      font-size: 10px;
+      width: 98px;
+      height: 34px;
+      padding: 0px;
+      
+    }
+  
+  }
+  
 @media (max-width: 964px){
     .center{
         width: auto;
